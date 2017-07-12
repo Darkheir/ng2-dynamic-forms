@@ -1,5 +1,5 @@
 <div [class.form-group]="asBootstrapFormGroup || model.cls.element.container.includes('form-group')"
-     [class.has-error]="hasErrorMessaging && !hasFocus && isInvalid"
+     [class.has-danger]="hasErrorMessaging && !hasFocus && isInvalid"
      [formGroup]="group"
      [ngClass]="[model.cls.element.container, model.cls.grid.container]">
 
@@ -204,7 +204,7 @@
     </div>
 
 
-    <ul *ngIf="hasErrorMessaging" class="has-error"
+    <ul *ngIf="hasErrorMessaging" class="has-danger"
         [class.hidden]="!showErrorMessages"
         [ngClass]="[model.cls.grid.errors]">
 
